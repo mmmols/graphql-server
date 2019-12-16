@@ -6,7 +6,7 @@ const express = require("express");
 const server = new ApolloServer({ typeDefs, resolvers });
 const app = express();
 
-app.use(cors);
+app.use(cors());
 
 server.applyMiddleware({ app });
 
